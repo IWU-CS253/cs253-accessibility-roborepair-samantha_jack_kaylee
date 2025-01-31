@@ -2,7 +2,7 @@
  indicate why you made the addition/change and/or the specific accessibility
  issue you are trying to address --> 
 
-<html>
+<html lang="en"> <!-- Added the lang attribute, important for screen readers. -->
 
 <head>
     <title>Contact - RoboCare</title>
@@ -24,9 +24,12 @@
     <p>For any questions, please fill out the form below:</p>
 
     <form>
-        Name: <input type="text" name="name"><br>
-        Email: <input type="text" name="email"><br>
-        Message: <textarea name="message"></textarea><br>
+        <label for="name">Input name.</label> <!-- Added labels for screen reader accessibility. -->
+        Name: <input type="text" name="name" id="name"><br>
+        <label for="email">Input email.</label>
+        Email: <input type="text" name="email" id="email"><br>
+        <label for="message">Input your message.</label>
+        Message: <textarea name="message" id="message"></textarea><br>
         <input type="submit" value="Send" style="background-color: lightgrey; color: white;">
     </form>
 
