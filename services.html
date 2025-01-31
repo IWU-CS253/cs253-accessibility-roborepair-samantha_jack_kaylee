@@ -2,7 +2,7 @@
  indicate why you made the addition/change and/or the specific accessibility
  issue you are trying to address --> 
 
-<html>
+<html lang="en"> <!-- Added the lang attribute, important for screen readers. -->
 <head>
     <title>Services - RoboCare</title>
     <link rel="stylesheet" href="css/style.css">
@@ -43,7 +43,7 @@
     <h2>Contact Us for More</h2>
     <p>For inquiries, email us at: <a href="mailto:contact@robocare.org">contact@robocare.org</a></p>
     
-    <div onclick="location.href='index.html';" style="color: blue; cursor: pointer;">Back to Home</div>
+    <div onclick="location.href='index.html';" style="color: blue; cursor: pointer;" tabindex="1">Back to Home</div> <!-- Added a tabindex value so it can be accessed by keyboard users. -->
     <footer>
         <p><img src="images/unscrupulous.png" width="50px">© 2024 Unscrupulous Web Design</p>
     </footer>
