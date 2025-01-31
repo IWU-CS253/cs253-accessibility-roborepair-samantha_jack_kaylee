@@ -8,7 +8,7 @@ body {
     background-color: black /*better contrast*/;
 	border: solid 5px;
 	margin: 100px;
-    padding: 100px; /*added padding so that elements are not so close to border in body */
+    padding: 50px; /*added padding so that elements are not so close to border in body */
 }
 
 header {
