@@ -4,28 +4,29 @@
 
 body {
     font-family: Arial, sans-serif;
-    color: #999; /* Poor contrast */
+    color: white; /* changed to white for better contrast ratio */
     background-color: #ccc;
 	border: solid 5px;
 	margin: 100px;
+    padding: 100px; /*added padding so that elements are not so close to border in body */
 }
 
 header {
 	text-align: center;
-	background-color: #333;
+	background-color: black; /*changed to black for better contrast ratio*/
 	color: white;
 	padding: 10px 0;
 }
 h1 {
-    font-size: 1em; /* Small font size for headings */
+    font-size: 2.5em; /* Updated font size to match standards*/
 }
 
 a {
-    color: #999; /* Poor link contrast */
+    color: blue; /*Updated link color for better contrast*/
 }
 
 a:hover {
-    color: #ccc; /* Even lower contrast on hover */
+    color: #6C9ABE; /* Slightly change color on hover, still readable*/
 }
 
 form {
@@ -40,10 +41,11 @@ input[type="submit"] {
 
 button {
     cursor: pointer;
-    font-size: 0.8em; /* Small font size */
+    font-size: 1em; /* Updated font size to be less small */
 }
 
-/* Missing focus styles for interactive elements */
 a:focus, button:focus, input:focus {
-    /* No focus styles defined */
+    outline: 3px dotted red; /* high-contrast red outline to ensure visibility */
+    background-color: darkgrey; /* background change for additional feedback */
+    color: white; /* makes sure text remains readable on focus */
 }
